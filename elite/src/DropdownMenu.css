@@ -1,0 +1,39 @@
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    margin-bottom: 10px;
+  }
+  
+  .select {
+    padding: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    padding: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .result {
+    margin-top: 10px;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
