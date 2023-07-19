@@ -6,7 +6,7 @@ const StudentModel = require('./Students')
 const app = express()
 app.use(express.json())
 app.use(cors({
-  origin : ["https://mern-project-api-pi.vercel.app"],
+  origin : ["*"],
   methods: ["POST","GET"],
   credentials: true
 }))
