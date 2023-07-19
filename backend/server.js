@@ -23,7 +23,3 @@ app.get('/getStudents/:option/:value', (req, res) => {
     .then(students => res.json(students))
     .catch(err => res.status(500).json({ error: "An error occurred while fetching students." }));
 });
-
-// app.listen(3001, ()=>{
-//   console.log("Server is running on port 3001");
-// })
