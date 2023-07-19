@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect("mongodb+srv://projectuser:projectuser@cluster0.qx2ctcj.mongodb.net/CollegeDetails")
+mongoose.connect("mongodb+srv://projectuser:projectpassword@cluster0.qx2ctcj.mongodb.net/CollegeDetails")
 
 app.get('/getStudents/:option/:value', (req, res)=>{
   const opt = req.params.option;
