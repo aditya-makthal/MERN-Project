@@ -12,9 +12,10 @@ app.use(cors({
 }))
 mongoose.connect("mongodb+srv://projectuser:projectpassword@cluster0.qx2ctcj.mongodb.net/CollegeDetails")
 
-app.get('/', (req, res) => {
-  res.send("Default route invoked");
+app.get('/api/', (req, res) => {
+  res.send("API root route invoked");
 });
+
 
 app.get('/getStudents/:option/:value', (req, res) => {
   const opt = req.params.option;

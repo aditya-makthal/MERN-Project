@@ -7,14 +7,15 @@
       }
     ],
     "routes": [
-      {
-        "src": "/api/getStudents/:option/:value",
-        "dest": "api/server.js"
-      },
-      {
-        "src": "/api/(.*)",
-        "dest": "api/server.js"
-      }
-    ]
+        {
+          "src": "/api/getStudents/:option/:value",
+          "dest": "api/server.js"
+        },
+        {
+          "src": "/api/(.*)",
+          "dest": "api/server.js"
+        }
+      ]
+      
   }
   
