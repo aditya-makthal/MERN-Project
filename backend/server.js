@@ -4,9 +4,12 @@ const cors = require('cors')
 const StudentModel = require('./Students')
 
 const app = express()
-app.use(cors({origin:["*"]}))
 app.use(express.json())
-
+app.use(cors({
+  origin : ["https://mern-project-api-pi.vercel.app"],
+  methods: ["POST","GET"],
+  credentials: true
+}))
 mongoose.connect("mongodb+srv://projectuser:projectpassword@cluster0.qx2ctcj.mongodb.net/CollegeDetails")
 
 app.get('/',(req,res)=>{
