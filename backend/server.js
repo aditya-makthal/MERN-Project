@@ -4,7 +4,7 @@ const cors = require('cors')
 const StudentModel = require('./Students')
 
 const app = express()
-app.use(cors({origin:"*"}))
+app.use(cors({origin:["*"]}))
 app.use(express.json())
 
 mongoose.connect("mongodb+srv://projectuser:projectpassword@cluster0.qx2ctcj.mongodb.net/CollegeDetails")
