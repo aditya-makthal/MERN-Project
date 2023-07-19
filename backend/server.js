@@ -13,7 +13,7 @@ app.use(cors({
 mongoose.connect("mongodb+srv://projectuser:projectpassword@cluster0.qx2ctcj.mongodb.net/CollegeDetails")
 
 app.get('/',(req,res)=>{
-  console.log("Default route invoked")
+  res.join("Default route invoked")
 })
 
 app.get('/getStudents/:option/:value', (req, res)=>{
