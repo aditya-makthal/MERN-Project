@@ -1,13 +1,20 @@
 {
     "version": 2,
+    "builds": [
+      {
+        "src": "api/server.js",
+        "use": "@vercel/node"
+      }
+    ],
     "routes": [
       {
-        "src": "/getStudents/:option/:value",
-        "dest": "/api/getStudents/:option/:value"
+        "src": "/api/getStudents/:option/:value",
+        "dest": "api/server.js"
       },
       {
-        "src": "/(.*)",
-        "dest": "/"
+        "src": "/api/(.*)",
+        "dest": "api/server.js"
       }
     ]
   }
+  
