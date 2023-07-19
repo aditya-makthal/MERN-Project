@@ -7,7 +7,7 @@ function App() {
   const [students, setStudents] = useState([]);
   const [option, setOption] = useState("");
   const [value, setValue] = useState("");
-  const baseUrl = 'http://localhost:3001/getStudents/';
+  const baseUrl = 'https://mern-project-api-pi.vercel.app/getStudents/';
   const dynamicUrl = `${baseUrl}${option}/${value}`;
 
   useEffect(() => {
