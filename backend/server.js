@@ -9,6 +9,10 @@ app.use(express.json())
 
 mongoose.connect("mongodb+srv://projectuser:projectpassword@cluster0.qx2ctcj.mongodb.net/CollegeDetails")
 
+app.get('/',(req,res)=>{
+  console.log("Default route invoked")
+})
+
 app.get('/getStudents/:option/:value', (req, res)=>{
   const opt = req.params.option;
   const value = req.params.value;
