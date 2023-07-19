@@ -24,6 +24,6 @@ app.get('/getStudents/:option/:value', (req, res) => {
     .catch(err => res.status(500).json({ error: "An error occurred while fetching students." }));
 });
 
-app.listen(3001, ()=>{
-  console.log("Server is running on port 3001");
-})
+// app.listen(3001, ()=>{
+//   console.log("Server is running on port 3001");
+// })
